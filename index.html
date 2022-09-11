@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI DJ WEB APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js" integrity="sha512-+tu0+vUXyZX+S51npa//IN6znNTLZsBoy8mXn9WzHxfBqYMy6gOzzfTK0VqZf9O171RY9AJviHDokCnvEq8+1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/addons/p5.sound.js" integrity="sha512-TU9AWtV5uUZPX8dbBAH8NQF1tSdigPRRT82vllAQ1Ke28puiqLA6ZVKxtUGlgrH6yWFnkKy+sE6luNEGH9ar0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+      <link rel="stylesheet" type="text/css" href="style.css">
+    
+    </head>
+    <style>
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJT3VByiFfZpqdRHOXWrHcBzJw1lp0umjn4g&usqp=CAU');
+        }
+        .heading {
+            width: 100%;
+            font-size: 25px;
+        }
+        .note {
+            font-weight: bold;
+            color: red;
+            font-size: 20px;
+        }
+        #song {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        video {
+            border: 5px solid red;
+            border-style: groove;
+            border-radius: 10px;
+            background-color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+    <body>
+        <center>
+            <h1 class="btn btn-info heading">
+                AI Music Web App
+                <br>
+                <span class="note">
+                    Note: Move your left hand left and right to play different songs.
+                </span>
+            </h1>
+            <h3 class="btn btn-warning" id="song">Song: </h3>
+            <br><br>
+            <button class="btn btn-success" onclick="play()">PLAY</button>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
